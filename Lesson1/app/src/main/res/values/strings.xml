@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Lesson1</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="cumprimento">Olá!</string>
+    <string name="notificacao">Você acaba de criar sua primeira tela!</string>
     <string name="action_settings">Settings</string>
 </resources>
