@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Name"
         android:ems="10"
         android:id="@+id/editText" />
 
@@ -21,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
+        android:hint="Senha em Texto"
         android:ems="10"
         android:id="@+id/editText3" />
 
@@ -28,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberPassword"
+        android:hint="Senha Numérica"
         android:ems="10"
         android:id="@+id/editText4" />
 
@@ -35,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
+        android:hint="E-mail"
         android:ems="10"
         android:id="@+id/editText5" />
 
@@ -42,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
+        android:hint="Telefone"
         android:ems="10"
         android:id="@+id/editText6" />
 
@@ -49,6 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
+        android:hint="CEP"
         android:ems="10"
         android:id="@+id/editText7" />
 
@@ -56,6 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="time"
+        android:hint="Tempo"
         android:ems="10"
         android:id="@+id/editText8" />
 
@@ -63,6 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="date"
+        android:hint="Data de Nascimento"
         android:ems="10"
         android:id="@+id/editText9" />
 
@@ -70,6 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:hint="RG (Somente números)"
         android:ems="10"
         android:id="@+id/editText10" />
 

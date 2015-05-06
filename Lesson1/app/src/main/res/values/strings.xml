@@ -2,6 +2,6 @@
     <string name="app_name">Lesson1</string>
 
     <string name="cumprimento">Olá! Insira seus dados por favor.</string>
-    <string name="notificacao">Você acaba de criar sua primeira tela!</string>
+    <string name="notificacao">Percebeu a diferênça entre as caixas de entrada?</string>
     <string name="action_settings">Settings</string>
 </resources>
