@@ -2,8 +2,10 @@ package applus.com.lesson1;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class HomeActivity extends ActionBarActivity {
@@ -34,5 +36,9 @@ public class HomeActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void continuarCadastro(View button) {
+        Log.d(this.getClass().getSimpleName(), "Botão continuar foi pressionado");
     }
 }

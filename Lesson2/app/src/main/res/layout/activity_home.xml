@@ -92,7 +92,8 @@
         android:layout_height="wrap_content"
         android:text="CONTINUAR"
         android:id="@+id/button"
-        android:layout_gravity="right" />
+        android:layout_gravity="right"
+        android:onClick="continuarCadastro"/>
 
     <TextView android:text="@string/notificacao" android:layout_width="match_parent"
         android:layout_height="wrap_content"
