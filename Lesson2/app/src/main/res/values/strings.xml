@@ -3,6 +3,7 @@
 
     <string name="cumprimento">Olá! Insira seus dados\npor favor.</string>
     <string name="notificacao">Percebeu a diferênça entre as caixas de entrada?</string>
+    <string name="confirmacao">Confira seus dados\npor favor.</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_confirmation">ConfirmationActivity</string>
 
