@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 import applus.com.lesson2.ConfirmationActivity;
 
@@ -45,6 +46,30 @@ public class HomeActivity extends ActionBarActivity {
         Log.d(this.getClass().getSimpleName(), "Botão continuar foi pressionado");
 
         Intent confirmacao = new Intent(this, ConfirmationActivity.class);
+
+        EditText nome = (EditText) findViewById(R.id.editText_nome);
+        confirmacao.putExtra("NOME", nome.getText());
+
+        EditText senhaTexto = (EditText) findViewById(R.id.editText_senha_texto);
+        confirmacao.putExtra("SENHA_TEXTO", senhaTexto.getText());
+
+        EditText senhaNumerica = (EditText) findViewById(R.id.editText_senha_numerica);
+        confirmacao.putExtra("SENHA_NUMERICA", senhaNumerica.getText());
+
+        EditText email = (EditText) findViewById(R.id.editText_email);
+        confirmacao.putExtra("EMAIL", email.getText());
+
+        EditText telefone = (EditText) findViewById(R.id.editText_telefone);
+        confirmacao.putExtra("TELEFONE", telefone.getText());
+
+        EditText cep = (EditText) findViewById(R.id.editText_cep);
+        confirmacao.putExtra("CEP", cep.getText());
+
+        EditText nascimento = (EditText) findViewById(R.id.editText_nascimento);
+        confirmacao.putExtra("NASCIMENTO", nascimento.getText());
+
+        EditText rg = (EditText) findViewById(R.id.editText_rg);
+        confirmacao.putExtra("RG", rg.getText());
 
         startActivity(confirmacao);
     }

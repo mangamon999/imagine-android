@@ -16,68 +16,69 @@
         android:padding="5dp"/>
 
     <EditText
+        android:id="@+id/editText_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:hint="Name"
         android:ems="10"
-        android:id="@+id/editText" />
+         />
 
     <EditText
+        android:id="@+id/editText_senha_texto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="Senha em Texto"
-        android:ems="10"
-        android:id="@+id/editText3" />
+        android:ems="10" />
 
     <EditText
+        android:id="@+id/editText_senha_numerica"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberPassword"
         android:hint="Senha Numérica"
-        android:ems="10"
-        android:id="@+id/editText4" />
+        android:ems="10" />
 
     <EditText
+        android:id="@+id/editText_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:hint="E-mail"
-        android:ems="10"
-        android:id="@+id/editText5" />
+        android:ems="10" />
 
     <EditText
+        android:id="@+id/editText_telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:hint="Telefone"
-        android:ems="10"
-        android:id="@+id/editText6" />
+        android:ems="10" />
 
     <EditText
+        android:id="@+id/editText_cep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
         android:hint="CEP"
-        android:ems="10"
-        android:id="@+id/editText7" />
+        android:ems="10" />
 
     <EditText
+        android:id="@+id/editText_nascimento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="date"
         android:hint="Data de Nascimento"
-        android:ems="10"
-        android:id="@+id/editText9" />
+        android:ems="10" />
 
     <EditText
+        android:id="@+id/editText_rg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="RG (Somente números)"
-        android:ems="10"
-        android:id="@+id/editText10" />
+        android:ems="10" />
 
     <Button
         android:layout_width="wrap_content"
