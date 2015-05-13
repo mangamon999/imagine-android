@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView android:text="@string/cumprimento" android:layout_width="match_parent"
-        android:textSize="29sp"
+        android:textSize="23sp"
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="@android:color/primary_text_dark"
@@ -62,14 +62,6 @@
         android:hint="CEP"
         android:ems="10"
         android:id="@+id/editText7" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="time"
-        android:hint="Tempo"
-        android:ems="10"
-        android:id="@+id/editText8" />
 
     <EditText
         android:layout_width="match_parent"
