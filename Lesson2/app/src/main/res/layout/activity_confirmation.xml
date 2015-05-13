@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="applus.com.lesson2.ConfirmationActivity">
 
-    <TextView android:text="@string/confirmacao" android:layout_width="match_parent"
+    <TextView android:text="@string/confirmacao_titulo" android:layout_width="match_parent"
         android:textSize="29sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -17,69 +17,69 @@
         android:padding="5dp"/>
 
     <TextView
+        android:id="@+id/confirmation_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Name"
-        android:id="@+id/confirmation_name"
+        android:text="Nome: João"
         android:textSize="24sp"
         android:layout_marginTop="3dp"/>
 
     <TextView
+        android:id="@+id/confirmation_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="E-mail"
-        android:id="@+id/confirmation_email"
+        android:text="E-mail: joao@imagine.com"
         android:textSize="24sp"
         android:layout_marginTop="3dp"/>
 
     <TextView
+        android:id="@+id/confirmation_telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
-        android:hint="Telefone"
-        android:id="@+id/confirmation_telefone"
+        android:text="Telefone: (48) 9876-5432"
         android:textSize="24sp"
         android:layout_marginTop="3dp"/>
 
     <TextView
+        android:id="@+id/confirmation_cep"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
-        android:hint="CEP"
-        android:id="@+id/confirmation_cep"
+        android:text="CEP: 37200-000"
         android:textSize="24sp"
         android:layout_marginTop="3dp" />
 
     <TextView
+        android:id="@+id/confirmation_tempo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="time"
-        android:hint="Tempo"
-        android:id="@+id/confirmation_tempo"
+        android:text="Tempo: 12:53"
         android:textSize="24sp"
         android:layout_marginTop="3dp" />
 
     <TextView
+        android:id="@+id/confirmation_nascimento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="date"
-        android:hint="Data de Nascimento"
-        android:id="@+id/confirmation_nascimento"
+        android:text="Data de Nascimento: 22/09/1985"
         android:textSize="24sp"
         android:layout_marginTop="3dp" />
 
     <TextView
+        android:id="@+id/confirmation_rg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="RG (Somente números)"
-        android:id="@+id/confirmation_rg"
+        android:text="RG: 10.010.101"
         android:textSize="24sp"
         android:layout_marginTop="3dp" />
 
-    <TextView android:text="@string/notificacao" android:layout_width="wrap_content"
+    <TextView android:text="@string/confirmacao_notificacao" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/holo_red_light"
         android:textSize="19sp"
