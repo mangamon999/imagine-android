@@ -2,7 +2,7 @@
     <string name="app_name">Lesson1</string>
 
     <string name="cumprimento">Olá! Insira seus dados\npor favor.</string>
-    <string name="notificacao">Percebeu a diferênça entre as caixas de entrada?</string>
+    <string name="notificacao">Percebeu a diferença entre as caixas de entrada?</string>
     <string name="confirmacao_titulo">Confira seus dados\npor favor.</string>
     <string name="confirmacao_notificacao">Caso esteja tudo certo você pode prosseguir.</string>
     <string name="action_settings">Settings</string>
