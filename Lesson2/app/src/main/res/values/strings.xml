@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lesson1</string>
+
+    <string name="cumprimento">Olá! Insira seus dados\npor favor.</string>
+    <string name="notificacao">Percebeu a diferênça entre as caixas de entrada?</string>
+    <string name="action_settings">Settings</string>
+</resources>
