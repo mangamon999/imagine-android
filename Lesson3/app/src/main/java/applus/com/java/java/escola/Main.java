@@ -19,6 +19,9 @@ public class Main {
         Escola escola = new Escola();
 
 //        escola.salas[0].setAlunos(alunos);
+        for (int i = 0; i < alunos.size(); i++) {
+          Aluno aluno = new Aluno("bruno", "(23)7432-2342");
+        }
 
 
 //        System.out.print(escola);
