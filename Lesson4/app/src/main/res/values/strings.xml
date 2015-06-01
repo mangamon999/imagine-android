@@ -3,4 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_confirmacao">Confirmacao</string>
+    <string name="hint_nome">Email</string>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_submeter">Submeter</string>
 </resources>
