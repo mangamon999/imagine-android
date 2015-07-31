@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class CadastroActivity extends ActionBarActivity {
 
@@ -13,25 +14,15 @@ public class CadastroActivity extends ActionBarActivity {
         setContentView(R.layout.activity_cadastro);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_cadastro, menu);
-        return true;
+    public void salvar(View view) {
+
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    public void limpar(View view) {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+    }
 
-        return super.onOptionsItemSelected(item);
+    public void restaurar(View view) {
+
     }
 }
