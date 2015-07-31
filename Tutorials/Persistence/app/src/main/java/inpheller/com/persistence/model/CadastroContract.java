@@ -5,8 +5,8 @@ import android.provider.BaseColumns;
 /**
  * Created by brunopinheiro on 7/30/15.
  */
-public class UsuarioContract {
-    private UsuarioContract() {
+public class CadastroContract {
+    private CadastroContract() {
     }
 
     /* Inner class that defines the table contents */
@@ -20,7 +20,7 @@ public class UsuarioContract {
         private static final String COMMA_SEP = ",";
 
         // CREATE TABLE usuario (_id INTEGER PRIMARY KEY, nome TEXT, email TEXT)
-        private static final String SQL_CREATE_ENTRIES =
+        public static final String SQL_CREATE_ENTRIES =
                 "CREATE TABLE " + TABLE_NAME + " (" +
                         _ID + " INTEGER PRIMARY KEY," +
                         COLUMN_NAME_NOME + TEXT_TYPE + COMMA_SEP +
@@ -28,7 +28,9 @@ public class UsuarioContract {
                         " )";
 
         // DROP TABLE IF EXISTS usuario;
-        private static final String SQL_DELETE_ENTRIES =
+        public static final String SQL_DELETE_ENTRIES =
                 "DROP TABLE IF EXISTS " + TABLE_NAME;
     }
+
+
 }
