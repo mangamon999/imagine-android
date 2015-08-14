@@ -13,6 +13,7 @@ import android.widget.ListView;
 
 import com.example.aluno1lab2.testproject.adapter.ItemArrayAdapter;
 import com.example.aluno1lab2.testproject.modelo.Item;
+import com.example.aluno1lab2.testproject.modelo.ItemDAO;
 
 import java.util.ArrayList;
 
@@ -38,7 +39,8 @@ public class ItensActivity extends ActionBarActivity implements AdapterView.OnIt
 
         ListView listView = (ListView) findViewById(R.id.listView);
 
-        itens = new ArrayList<>();
+        ItemDAO dao = new ItemDAO(ItensActivity.this);
+        itens = dao.buscarTodos();
 
         arrayAdapter = new ItemArrayAdapter(this, itens);
 
@@ -55,6 +57,9 @@ public class ItensActivity extends ActionBarActivity implements AdapterView.OnIt
                 String qtdItem = editTextQtdItem.getText().toString();
 
                 Item item = new Item(nomeItem, Integer.valueOf(qtdItem));
+
+                ItemDAO dao = new ItemDAO(ItensActivity.this);
+                dao.salvar(item);
 
                 itens.add(item);
                 arrayAdapter.notifyDataSetChanged();

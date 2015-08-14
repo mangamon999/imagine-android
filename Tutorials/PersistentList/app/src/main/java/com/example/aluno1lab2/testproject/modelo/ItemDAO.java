@@ -5,6 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.util.ArrayList;
+
 /**
  * Created by brunopinheiro on 8/14/15.
  */
@@ -65,6 +67,47 @@ public class ItemDAO {
         String qtd = cursor.getString(cursor.getColumnIndex(ListasContract.ItensEntry.COLUMN_QTD));
 
         return new Item(itemId, nome, Integer.valueOf(qtd));
+    }
+
+    public ArrayList<Item> buscarTodos() {
+
+        String[] projection = {
+                ListasContract.ItensEntry._ID,
+                ListasContract.ItensEntry.COLUMN_NOME,
+                ListasContract.ItensEntry.COLUMN_QTD
+        };
+
+        Cursor cursor = database.query(
+                ListasContract.ItensEntry.TABLE_NAME,
+                projection,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        ArrayList<Item> items = new ArrayList<>();
+
+        if (cursor.getCount() == 0) {
+            return items;
+        }
+
+        cursor.moveToFirst();
+
+        do {
+
+            long itemId = cursor.getLong(cursor.getColumnIndex(ListasContract.ItensEntry._ID));
+            String nome = cursor.getString(cursor.getColumnIndex(ListasContract.ItensEntry.COLUMN_NOME));
+            String qtd = cursor.getString(cursor.getColumnIndex(ListasContract.ItensEntry.COLUMN_QTD));
+
+            Item item = new Item(itemId, nome, Integer.valueOf(qtd));
+
+            items.add(item);
+
+        } while (cursor.moveToNext());
+
+        return items;
     }
 
     public boolean delete(Item item) {
