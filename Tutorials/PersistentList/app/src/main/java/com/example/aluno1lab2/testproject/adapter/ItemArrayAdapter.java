@@ -35,7 +35,7 @@ public class ItemArrayAdapter extends ArrayAdapter<Item> {
         TextView qtdTextView = (TextView) itemView.findViewById(R.id.qtd);
 
         nomeTextView.setText(item.getNome());
-        qtdTextView.setText(item.getQuantidade());
+        qtdTextView.setText(String.valueOf(item.getQuantidade()));
 
         return itemView;
     }

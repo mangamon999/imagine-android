@@ -31,7 +31,7 @@ public class ItensActivity extends ActionBarActivity implements AdapterView.OnIt
         setContentView(R.layout.activity_itens);
 
         novoItemContainer = findViewById(R.id.novo_item_container);
-        //novoItemContainer.setVisibility(View.GONE);
+        novoItemContainer.setVisibility(View.GONE);
 
         editTextNomeItem = (EditText) findViewById(R.id.nome_item);
         editTextQtdItem = (EditText) findViewById(R.id.qtd_item);
@@ -59,8 +59,9 @@ public class ItensActivity extends ActionBarActivity implements AdapterView.OnIt
                 itens.add(item);
                 arrayAdapter.notifyDataSetChanged();
 
-                // novoItemContainer.setVisibility(View.GONE);
+                novoItemContainer.setVisibility(View.GONE);
                 editTextNomeItem.setText(null);
+                editTextQtdItem.setText(null);
             }
         });
     }
@@ -80,7 +81,9 @@ public class ItensActivity extends ActionBarActivity implements AdapterView.OnIt
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.novo_item_menu) {
+            novoItemContainer.setVisibility(View.VISIBLE);
+            editTextNomeItem.requestFocus();
             return true;
         }
 
