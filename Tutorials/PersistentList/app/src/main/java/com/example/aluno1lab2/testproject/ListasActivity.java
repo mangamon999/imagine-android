@@ -64,8 +64,6 @@ public class ListasActivity extends ActionBarActivity implements AdapterView.OnI
         });
     }
 
-//    final ArrayList<Integer> selecionados = new ArrayList<>();
-
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent itensActivity = new Intent(this, ItensActivity.class);
