@@ -13,6 +13,7 @@
         android:id="@+id/menu_compartilhar"
         android:orderInCategory="90"
         android:title="@string/action_novo_item"
-        android:icon="@android:drawable/ic_menu_share"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom"
+        app:actionProviderClass=
+            "android.support.v7.widget.ShareActionProvider"/>
 </menu>

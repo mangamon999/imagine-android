@@ -36,7 +36,6 @@ public class ListasActivity extends ActionBarActivity implements AdapterView.OnI
         setContentView(R.layout.activity_listas);
 
         novoItemContainer = findViewById(R.id.novo_item_container);
-//        novoItemContainer.setVisibility(View.GONE);
 
         editTextNomeItem = (EditText) findViewById(R.id.nome_item);
 
@@ -44,6 +43,10 @@ public class ListasActivity extends ActionBarActivity implements AdapterView.OnI
 
         ListaDAO listaDAO = new ListaDAO(this);
         listas = listaDAO.buscarTodos();
+
+        if (listas.size() > 0) {
+            novoItemContainer.setVisibility(View.GONE);
+        }
 
         arrayAdapter = new ArrayAdapter<Lista>(this,
                 R.layout.image_item, R.id.view_nome, listas);

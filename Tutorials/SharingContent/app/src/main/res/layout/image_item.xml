@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="6dp">
+    android:padding="10dp">
 
     <ImageView
         android:id="@+id/icone"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:src="@android:drawable/btn_star" />
 
     <TextView
@@ -17,5 +17,5 @@
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:text="Meu Nome"
-        android:textSize="35sp" />
+        android:textSize="25sp" />
 </LinearLayout>
