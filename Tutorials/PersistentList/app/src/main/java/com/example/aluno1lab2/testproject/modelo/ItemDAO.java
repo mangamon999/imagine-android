@@ -115,6 +115,7 @@ public class ItemDAO {
             return false;
         }
 
+
         int affected = database.delete(
                 ListasContract.ItensEntry.TABLE_NAME,
                 ListasContract.ItensEntry._ID + " LIKE ?",
