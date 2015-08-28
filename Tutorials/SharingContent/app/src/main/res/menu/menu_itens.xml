@@ -2,10 +2,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.aluno1lab2.testproject.ItensActivity">
-    <itens
-        android:id="@+id/novo_item_menu"
+    <item
+        android:id="@+id/menu_novo_item"
         android:orderInCategory="100"
         android:title="@string/action_novo_item"
         android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_compartilhar"
+        android:orderInCategory="90"
+        android:title="@string/action_novo_item"
+        android:icon="@android:drawable/ic_menu_share"
         app:showAsAction="ifRoom" />
 </menu>

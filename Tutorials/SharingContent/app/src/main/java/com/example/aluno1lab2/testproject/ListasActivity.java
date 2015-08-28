@@ -79,6 +79,7 @@ public class ListasActivity extends ActionBarActivity implements AdapterView.OnI
 
         Lista lista = arrayAdapter.getItem(position);
         itensActivity.putExtra(ItensActivity.PARAM_LISTA_ID, lista.getId());
+        itensActivity.putExtra(ItensActivity.PARAM_LISTA_NOME, lista.getNome());
 
         startActivity(itensActivity);
     }
@@ -99,7 +100,7 @@ public class ListasActivity extends ActionBarActivity implements AdapterView.OnI
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.novo_item_menu) {
+        if (id == R.id.menu_novo_item) {
             novoItemContainer.setVisibility(View.VISIBLE);
             editTextNomeItem.requestFocus();
             return true;

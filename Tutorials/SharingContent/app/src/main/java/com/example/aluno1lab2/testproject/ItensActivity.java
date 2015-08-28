@@ -1,5 +1,7 @@
 package com.example.aluno1lab2.testproject;
 
+import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,6 +23,7 @@ import java.util.ArrayList;
 public class ItensActivity extends ActionBarActivity implements AdapterView.OnItemClickListener {
 
     public static final String PARAM_LISTA_ID = "listaId";
+    public static final String PARAM_LISTA_NOME = "listaId";
 
     private ArrayList<Item> itens;
     private ArrayAdapter<Item> arrayAdapter;
@@ -28,6 +31,7 @@ public class ItensActivity extends ActionBarActivity implements AdapterView.OnIt
     private View novoItemContainer;
     private EditText editTextQtdItem;
     private long listaId;
+    private String listaNome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +47,7 @@ public class ItensActivity extends ActionBarActivity implements AdapterView.OnIt
         ListView listView = (ListView) findViewById(R.id.listView);
 
         listaId = getIntent().getExtras().getLong(PARAM_LISTA_ID);
+        listaNome = getIntent().getExtras().getString(PARAM_LISTA_NOME);
 
         ItemDAO dao = new ItemDAO(this);
         itens = dao.buscarItensDaLista(listaId);
@@ -92,13 +97,39 @@ public class ItensActivity extends ActionBarActivity implements AdapterView.OnIt
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.novo_item_menu) {
+        if (id == R.id.menu_novo_item) {
             novoItemContainer.setVisibility(View.VISIBLE);
             editTextNomeItem.requestFocus();
             return true;
         }
 
+        if (id == R.id.menu_compartilhar) {
+            Intent enviarLista = new Intent(Intent.ACTION_SEND);
+            enviarLista.setType("text/plain");
+
+            String listaDeCompras = parseListaDeCompras();
+            enviarLista.putExtra(Intent.EXTRA_EMAIL, new String[]{"jose@gmail.com"});
+            enviarLista.putExtra(Intent.EXTRA_SUBJECT, "Lista de compras");
+            enviarLista.putExtra(Intent.EXTRA_TEXT, listaDeCompras);
+
+            startActivity(Intent.createChooser(enviarLista, "Enviar lista..."));
+
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
+    }
+
+    @NonNull
+    private String parseListaDeCompras() {
+
+        String lista = listaNome + "\n";
+
+        for (Item item : itens) {
+            lista += "\n" + item.getQuantidade() + " " + item.getNome();
+        }
+
+        return lista;
     }
 
     @Override
