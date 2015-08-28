@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/icone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@android:drawable/btn_star" />
+
+    <TextView
+        android:id="@+id/view_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="Meu Nome"
+        android:textSize="35sp" />
+</LinearLayout>
