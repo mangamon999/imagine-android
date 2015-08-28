@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PersistentRelation.iml" filepath="$PROJECT_DIR$/PersistentRelation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SharingContent.iml" filepath="$PROJECT_DIR$/SharingContent.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
