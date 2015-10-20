@@ -12,7 +12,7 @@ public class HelloWorld {
     public static void main(String[] args) {
         log("Tipos de variáveis Variáveis");
 
-        
+
     }
 }
 
