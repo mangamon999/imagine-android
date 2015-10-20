@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Develop/Mangamon/Course-Imagine/Android/ClassesRepo/Tutorials/Java/Basics/.idea/Basics.iml" filepath="$USER_HOME$/Develop/Mangamon/Course-Imagine/Android/ClassesRepo/Tutorials/Java/Basics/.idea/Basics.iml" />
-      <module fileurl="file://$USER_HOME$/Develop/Mangamon/Course-Imagine/Android/ClassesRepo/Tutorials/Java/Basics/Basics.iml" filepath="$USER_HOME$/Develop/Mangamon/Course-Imagine/Android/ClassesRepo/Tutorials/Java/Basics/Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basics.iml" filepath="$PROJECT_DIR$/Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basicslib/basicslib.iml" filepath="$PROJECT_DIR$/basicslib/basicslib.iml" />
     </modules>
   </component>
 </project>

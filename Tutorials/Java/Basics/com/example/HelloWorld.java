@@ -10,8 +10,29 @@ public class HelloWorld {
     }
 
     public static void main(String[] args) {
-        log("Helo World");
+        log("Tipos de variáveis Variáveis");
+
+        
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // filewatcher com/example/HelloWorld.java  "javac com/example/HelloWorld.java && java com.example.HelloWorld"
